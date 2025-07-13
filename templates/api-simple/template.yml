@@ -1,0 +1,4 @@
+name: "API Simple"
+description: "Template solo backend"
+files:
+  "backend/main.py": "backend/main.py.j2"

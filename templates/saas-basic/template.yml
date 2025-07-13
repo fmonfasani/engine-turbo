@@ -1,0 +1,18 @@
+name: "SaaS Básico"
+description: "Aplicación SaaS completa con FastAPI + Next.js + Auth + Billing"
+stack:
+  backend: fastapi
+  frontend: nextjs
+  database: postgresql
+  cache: redis
+
+files:
+  "backend/main.py": "backend/main.py.j2"
+  "frontend/app/layout.tsx": "frontend/app/layout.tsx.j2"
+  "docker-compose.yml": "devops/docker-compose.yml.j2"
+
+variables:
+  app_name: "string"
+  app_description: "string"
+  database_url: "string"
+  jwt_secret: "string"
