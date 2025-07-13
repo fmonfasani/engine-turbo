@@ -1,0 +1,16 @@
+export const metadata = {
+  title: '{{ app_name }}',
+  description: '{{ app_description }}',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {/** Código generado por IA */}
+        {{ generated_frontend }}
+        {children}
+      </body>
+    </html>
+  )
+}

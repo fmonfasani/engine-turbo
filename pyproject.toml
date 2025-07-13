@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Engine-Turbo"
+version = "1.0.0"
+description = "Fast Full-Stack Project Generator using LLM APIs + Templates"
+dependencies = [
+    "aiohttp>=3.8.0",
+    "jinja2>=3.1.0",
+    "pyyaml>=6.0.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+Engine-Turbo = "engine_turbo.cli:app"
